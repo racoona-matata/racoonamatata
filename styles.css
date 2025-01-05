@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display:contents
+  }
+  
+  .menu li {
+    list-style: none;
+    margin-left: 1rem;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('./racoon.jpeg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    }
+
+  
+  .hero-content {
+    animation: fadeIn 2s ease-out;
+  }
+
+  h2.hero-text {
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold;
+    color: #ffffff; /* White for contrast */
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    z-index: 2; /* Ensure it's above the background */
+    animation: float 3s infinite ease-in-out;
+
+  }
+  
+  /* Style for the button below */
+  button.buy-token {
+    background-color: #00ff95; /* Bright green for the button */
+    color: #000; /* Black text for contrast */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  button.buy-token:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 4px 15px rgba(0, 255, 149, 0.7); /* Glow effect */
+  }
+  
+  /* .hero-text {
+    font-size: 2.5rem;
+    animation: float 3s infinite ease-in-out;
+    color: rgb(0, 0, 0)
+  } */
+  
+  .cta-button {
+    margin-top: 1.5rem;
+    background-color: #b15fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.1);
+    background-color: #008f6d;
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* FAQ Section */
+  .faq {
+    padding: 4rem 2rem;
+    background-color: #111;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-item {
+    margin-bottom: 1rem;
+  }
+  
+  .faq-question {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-question:hover {
+    background-color: #444;
+  }
+  
+  .faq-answer {
+    display: none;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    color: #00ff95;
+  }
+  
+  /* Footer */
+  footer {
+    background: #000;
+    color: #888;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer .social-links a {
+    color: #00ff95;
+    text-decoration: none;
+  }
+
+  
